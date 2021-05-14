@@ -83,8 +83,8 @@ ul li{
     
 }
 .sticky{
-    /* background-image: url("texture.jpg"); */
-    background: white;
+    background-image: url("texture.jpg");
+    /* background: white; */
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
     
     transition: all 0.5s;
