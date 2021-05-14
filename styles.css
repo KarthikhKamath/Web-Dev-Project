@@ -1,0 +1,583 @@
+/*-------------- basic styles -------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+h4 {
+    color: rgb(73, 73, 73);
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    /* background: linear-gradient(to right top, rgba(104, 176, 224, 0.925) 0%, rgb(1, 29, 48)); */
+    /* background: linear-gradient(90deg, rgba(0, 51, 85, 1) 0%, rgba(128, 0, 0, 1) 100%); */
+    background: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.glass {
+    display: flex;
+    width: 75%;
+    z-index: 3;
+    min-height: 80vh;
+    background: whitesmoke;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    border-radius: 2em;
+    border: 3px solid white;
+    backdrop-filter: blur(2rem);
+    box-shadow: 8px 8px 20px rgba(122, 122, 122, 0.226);
+}
+
+
+/* Dashboard styles : Begin */
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+}
+
+.dashboard h1 {
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+.dashboard span {
+    color: rgba(128, 0, 0, 1);
+}
+
+.dashboard h4 {
+    margin-left: 6rem;
+}
+
+.email input,
+.pass input {
+    border-radius: 0.8em;
+    padding: 0.8em 10em;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    border: 2px solid grey;
+    text-decoration: none;
+}
+
+.forgot-pass h5 {
+    position: relative;
+    left: 30em;
+    color: #426696;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6rem;
+    transition: transform 500ms ease;
+}
+
+.login {
+    margin: 0 0.3em;
+    padding: 1em 4em;
+    border-radius: 0.7em;
+    background: rgba(128, 0, 0, 1) 100%;
+    border: 2.5px solid whitesmoke;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+}
+
+.login h3 {
+    color: whitesmoke;
+}
+
+.login:hover {
+    background: rgba(0, 51, 85, 1) 0%;
+    border: 2.5px solid whitesmoke;
+    transform: scale(1.05);
+}
+
+.login:hover h3 {
+    color: whitesmoke;
+}
+
+.sign-up {
+    margin: 0 2em;
+    padding: 1em 4em;
+    background: rgba(0, 51, 85, 1) 0%;
+    border-radius: 0.7em;
+    border: 2.5px solid whitesmoke;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+}
+
+.sign-up h3 {
+    color: whitesmoke;
+}
+
+.sign-up:hover {
+    background: rgba(128, 0, 0, 1) 100%;
+    border: 2.5px solid whitesmoke;
+    transform: scale(1.05);
+}
+
+.sign-up:hover h3 {
+    color: whitesmoke;
+}
+
+.footer {
+    margin-left: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #426696;
+}
+
+
+/* Dashboard styles : End */
+
+
+/* marketing styles :  Begin */
+
+.marketing {
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0, 51, 85, 1) 0%, rgba(128, 0, 0, 1) 100%);
+    border-radius: 2em;
+    overflow: hidden;
+    color: black;
+    font-weight: 600;
+}
+
+.marketing:hover,
+.marketing:focus {
+    color: whitesmoke;
+}
+
+.logo {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-size: 600;
+    text-align: center;
+}
+
+.marketing-text {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-size: 600;
+    text-align: center;
+}
+
+.image {
+    margin-left: 4rem;
+}
+
+.image:hover,
+.image:focus-within {
+    transform: scale(1.15);
+}
+
+.image-sml:hover,
+.image-sml:focus-within {
+    transform: scale(1.15);
+}
+
+
+/* Marketing styles: end */
+
+
+/* Responsive styles */
+
+
+/* -----------------------------x-Large Devices----------------------------------- */
+
+@media(min-width: 1240px) {
+    * {
+        overflow: hidden;
+    }
+    .left img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        left: 1px;
+        top: 15px;
+        overflow: hidden;
+    }
+    .right img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        left: 1133.9px;
+        overflow: hidden;
+    }
+    .dashboard {
+        flex: 3;
+    }
+    .marketing {
+        flex: 2;
+        display: inline-block;
+    }
+    .image img {
+        display: inline-block;
+    }
+}
+
+
+/* -------------------------------------large size devices------------------------------------ */
+
+@media(min-width: 1060px) and (max-width: 1240px) {
+    * {
+        overflow: hidden;
+    }
+    .left img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        left: 1px;
+        top: 15px;
+        overflow: hidden;
+    }
+    .right img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        left: 839.9px;
+        overflow: hidden;
+    }
+    .dashboard {
+        flex: 1;
+    }
+    .dashboard h1,
+    .dashboard h4 {
+        margin-left: 4rem;
+    }
+    .email input,
+    .pass input {
+        margin-left: 4rem;
+        border-radius: 0.8em;
+        padding: 0.8em 5em;
+        margin-top: 1rem;
+        border: 2px solid grey;
+    }
+    .forgot-pass h5 {
+        left: 15rem;
+    }
+    .button {
+        margin-left: 4rem;
+    }
+    .login {
+        margin: 0 0.3em;
+        padding: 1em 2em;
+        border-radius: 0.7em;
+        background: rgba(128, 0, 0, 1) 100%;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+    }
+    .login h3 {
+        font-size: 0.7rem;
+    }
+    .sign-up {
+        margin: 0 2em;
+        padding: 1em 2em;
+        background: rgba(0, 51, 85, 1) 0%;
+        border-radius: 0.7em;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+    }
+    .sign-up h3 {
+        font-size: 0.7rem;
+    }
+    .marketing {
+        flex: 1;
+        display: inline-block;
+    }
+    .logo {
+        align-items: center;
+        margin-top: 5rem;
+        font-size: 2rem;
+        font-size: 600;
+    }
+    .marketing-text {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .image-sml {
+        margin-left: 7em;
+    }
+    .image-sml img {
+        display: inline-block;
+    }
+}
+
+
+/* ---------------------------------------medium sized devices-------------------------------------------- */
+
+@media(min-width: 768px) and (max-width: 1060px) {
+    * {
+        overflow: hidden;
+    }
+    .left img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        left: 1px;
+        top: 15px;
+        overflow: hidden;
+    }
+    .right img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        left: 656.9px;
+        overflow: hidden;
+    }
+    .dashboard {
+        flex: 1;
+    }
+    .dashboard h1,
+    .dashboard h4 {
+        margin-left: 2.5rem;
+    }
+    .email input,
+    .pass input {
+        margin-left: 2.5rem;
+        border-radius: 0.8em;
+        padding: 0.6em 2.5em;
+        margin-top: 1rem;
+        border: 2px solid grey;
+    }
+    .forgot-pass h5 {
+        position: relative;
+        left: 11em;
+        color: #426696;
+    }
+    .button {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.5rem;
+        transition: transform 500ms ease;
+    }
+    .login {
+        margin: 0 0.3em;
+        padding: 1em 2em;
+        border-radius: 0.7em;
+        background: rgba(128, 0, 0, 1) 100%;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+    }
+    .login h3 {
+        font-size: 0.7rem;
+    }
+    .sign-up {
+        margin: 0 1em;
+        padding: 1em 2em;
+        background: rgba(0, 51, 85, 1) 0%;
+        border-radius: 0.7em;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+    }
+    .sign-up h3 {
+        font-size: 0.7rem;
+    }
+    .marketing {
+        flex: 1;
+        display: inline-block;
+    }
+    .image-sml {
+        margin-left: 5em;
+    }
+    .image-sml img {
+        display: inline-block;
+    }
+}
+
+
+/* ------------------------------------------------------small devices--------------------------------------------------- */
+
+@media(min-width: 480px) and (max-width: 768px) {
+    * {
+        overflow: hidden;
+    }
+    .left img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        left: 1px;
+        top: 15px;
+        overflow: hidden;
+    }
+    .right img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        left: 366.9px;
+        overflow: hidden;
+    }
+    .dashboard {
+        flex: 2;
+    }
+    .dashboard h1,
+    .dashboard h4 {
+        margin-left: 2rem;
+    }
+    .email input,
+    .pass input {
+        margin-left: 2rem;
+        border-radius: 0.8em;
+        padding: 0.4em 1em;
+        margin-top: 1rem;
+        border: 2px solid grey;
+    }
+    .button {
+        margin-left: 2rem;
+    }
+    .forgot-pass h5 {
+        position: relative;
+        left: 9em;
+        color: #426696;
+    }
+    .button {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        justify-content: space-around;
+        transition: transform 500ms ease;
+        overflow-wrap: hidden;
+    }
+    .login {
+        margin: 0 0.3em;
+        padding: 1em 1.5em;
+        border-radius: 0.7em;
+        background: rgba(128, 0, 0, 1) 100%;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+    }
+    .login h3 {
+        font-size: 1rem;
+    }
+    .sign-up {
+        margin: 0 2em;
+        padding: 1em 1em;
+        background: rgba(0, 51, 85, 1) 0%;
+        border-radius: 0.7em;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+    }
+    .sign-up h3 {
+        font-size: 1rem;
+    }
+    .marketing {
+        flex: 1;
+        display: inline-block;
+    }
+}
+
+
+/* --------------------------------------------------------very small devices------------------------------------------ */
+
+@media(max-width: 480px) and (min-width: 0px) {
+    * {
+        overflow: hidden;
+    }
+    .dashboard h1 {
+        font-size: 1.5rem;
+        margin-left: 0.8rem;
+    }
+    .right img {
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        left: 78.3px;
+        overflow: hidden;
+    }
+    .glass {
+        min-height: 60vh;
+    }
+    .dashboard {
+        flex: 1;
+        margin-top: 0;
+    }
+    .dashboard h4 {
+        margin-left: 0.5rem;
+    }
+    .email input,
+    .pass input {
+        margin-left: 0.6rem;
+        border-radius: 0.8em;
+        padding: 0.4em 4em;
+        margin-top: 0.4rem;
+        border: 2px solid grey;
+    }
+    .forgot-pass h5 {
+        position: relative;
+        left: 12em;
+        color: #426696;
+    }
+    .button {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0rem;
+        justify-content: space-around;
+        transition: transform 500ms ease;
+        overflow-wrap: hidden;
+    }
+    .login {
+        margin: 0 0.3em;
+        padding: 1em 2em;
+        border-radius: 0.7em;
+        background: rgba(128, 0, 0, 1) 100%;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+    }
+    .login h3 {
+        font-size: 1rem;
+    }
+    .sign-up {
+        margin: 0 1em;
+        padding: 1em 2em;
+        background: rgba(0, 51, 85, 1) 0%;
+        border-radius: 0.7em;
+        border: 2.5px solid whitesmoke;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+    }
+    .sign-up h3 {
+        font-size: 0.7rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+}
