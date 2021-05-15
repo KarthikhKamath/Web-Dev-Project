@@ -3,6 +3,6 @@
 **Task 1:** Gaming website  
 
 >Team: -Ayush Pandey   
-     </t>  -Karthik H Kamath 
+     <\t> -Karthik H Kamath 
        
 [Task 1](https://karthikhkamath.github.io/WebDevProject/)
