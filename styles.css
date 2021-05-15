@@ -46,9 +46,9 @@ main {
 
 .glass {
     display: flex;
-    width: 75%;
+    width: 70%;
     z-index: 3;
-    min-height: 80vh;
+    max-height: 80vh;
     background: whitesmoke;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
     border-radius: 2em;
@@ -83,9 +83,8 @@ main {
 .email input,
 .pass input {
     border-radius: 0.8em;
-    padding: 0.8em 10em;
-    margin-left: 6rem;
-    margin-top: 1rem;
+    min-width: 75%;
+    min-height: 2em;
     border: 2px solid grey;
     text-decoration: none;
 }
@@ -106,6 +105,7 @@ main {
 .login {
     margin: 0 0.3em;
     padding: 1em 4em;
+    min-width: 30%;
     border-radius: 0.7em;
     background: rgba(128, 0, 0, 1) 100%;
     border: 2.5px solid whitesmoke;
@@ -129,6 +129,7 @@ main {
 .sign-up {
     margin: 0 2em;
     padding: 1em 4em;
+    min-width: 30%;
     background: rgba(0, 51, 85, 1) 0%;
     border-radius: 0.7em;
     border: 2.5px solid whitesmoke;
@@ -225,7 +226,7 @@ main {
     .left img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         left: 1px;
         top: 15px;
         overflow: hidden;
@@ -233,13 +234,19 @@ main {
     .right img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         top: 15px;
         left: 1133.9px;
         overflow: hidden;
     }
     .dashboard {
         flex: 3;
+    }
+    .email input,
+    .pass input {
+        padding: 0.8em 10em;
+        margin-left: 6rem;
+        margin-top: 1rem;
     }
     .marketing {
         flex: 2;
@@ -260,7 +267,7 @@ main {
     .left img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         left: 1px;
         top: 15px;
         overflow: hidden;
@@ -268,7 +275,7 @@ main {
     .right img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         top: 15px;
         left: 839.9px;
         overflow: hidden;
@@ -283,10 +290,8 @@ main {
     .email input,
     .pass input {
         margin-left: 4rem;
-        border-radius: 0.8em;
         padding: 0.8em 5em;
         margin-top: 1rem;
-        border: 2px solid grey;
     }
     .forgot-pass h5 {
         left: 15rem;
@@ -297,10 +302,6 @@ main {
     .login {
         margin: 0 0.3em;
         padding: 1em 2em;
-        border-radius: 0.7em;
-        background: rgba(128, 0, 0, 1) 100%;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
     }
     .login h3 {
         font-size: 0.7rem;
@@ -308,10 +309,6 @@ main {
     .sign-up {
         margin: 0 2em;
         padding: 1em 2em;
-        background: rgba(0, 51, 85, 1) 0%;
-        border-radius: 0.7em;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
     }
     .sign-up h3 {
         font-size: 0.7rem;
@@ -350,7 +347,7 @@ main {
     .left img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         left: 1px;
         top: 15px;
         overflow: hidden;
@@ -358,7 +355,7 @@ main {
     .right img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         top: 15px;
         left: 656.9px;
         overflow: hidden;
@@ -373,29 +370,19 @@ main {
     .email input,
     .pass input {
         margin-left: 2.5rem;
-        border-radius: 0.8em;
         padding: 0.6em 2.5em;
         margin-top: 1rem;
-        border: 2px solid grey;
     }
     .forgot-pass h5 {
-        position: relative;
         left: 11em;
-        color: #426696;
     }
     .button {
-        display: flex;
-        flex-direction: row;
         margin-left: 2.5rem;
         transition: transform 500ms ease;
     }
     .login {
         margin: 0 0.3em;
         padding: 1em 2em;
-        border-radius: 0.7em;
-        background: rgba(128, 0, 0, 1) 100%;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
     }
     .login h3 {
         font-size: 0.7rem;
@@ -403,10 +390,6 @@ main {
     .sign-up {
         margin: 0 1em;
         padding: 1em 2em;
-        background: rgba(0, 51, 85, 1) 0%;
-        border-radius: 0.7em;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
     }
     .sign-up h3 {
         font-size: 0.7rem;
@@ -433,7 +416,7 @@ main {
     .left img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         left: 1px;
         top: 15px;
         overflow: hidden;
@@ -441,7 +424,7 @@ main {
     .right img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
+        position: fixed;
         top: 15px;
         left: 366.9px;
         overflow: hidden;
@@ -456,22 +439,17 @@ main {
     .email input,
     .pass input {
         margin-left: 2rem;
-        border-radius: 0.8em;
         padding: 0.4em 1em;
         margin-top: 1rem;
-        border: 2px solid grey;
     }
     .button {
         margin-left: 2rem;
     }
     .forgot-pass h5 {
-        position: relative;
         left: 9em;
-        color: #426696;
     }
     .button {
-        display: flex;
-        flex-direction: row;
+        margin-top: 1em;
         margin-left: 2rem;
         justify-content: space-around;
         transition: transform 500ms ease;
@@ -480,10 +458,6 @@ main {
     .login {
         margin: 0 0.3em;
         padding: 1em 1.5em;
-        border-radius: 0.7em;
-        background: rgba(128, 0, 0, 1) 100%;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
     }
     .login h3 {
         font-size: 1rem;
@@ -491,13 +465,12 @@ main {
     .sign-up {
         margin: 0 2em;
         padding: 1em 1em;
-        background: rgba(0, 51, 85, 1) 0%;
-        border-radius: 0.7em;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
     }
     .sign-up h3 {
         font-size: 1rem;
+    }
+    .footer {
+        margin-top: 1em;
     }
     .marketing {
         flex: 1;
@@ -512,70 +485,60 @@ main {
     * {
         overflow: hidden;
     }
+    h4 {
+        color: rgb(0, 0, 0);
+    }
     .dashboard h1 {
         font-size: 1.5rem;
         margin-left: 0.8rem;
     }
-    .right img {
+    .center img {
         display: inline-block;
         z-index: 2;
-        position: absolute;
-        top: 15px;
-        left: 78.3px;
-        overflow: hidden;
+        position: fixed;
+        top: -10px;
+        left: -50px;
     }
     .glass {
         min-height: 60vh;
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+        backdrop-filter: blur(0.1rem);
     }
     .dashboard {
         flex: 1;
         margin-top: 0;
     }
     .dashboard h4 {
+        color: rgb(0, 0, 0);
         margin-left: 0.5rem;
     }
     .email input,
     .pass input {
         margin-left: 0.6rem;
-        border-radius: 0.8em;
-        padding: 0.4em 4em;
+        /* padding: 0.4em 3em; */
         margin-top: 0.4rem;
-        border: 2px solid grey;
     }
     .forgot-pass h5 {
-        position: relative;
-        left: 12em;
-        color: #426696;
+        left: 9em;
     }
     .button {
-        display: flex;
-        flex-direction: row;
         margin-left: 0rem;
         justify-content: space-around;
-        transition: transform 500ms ease;
         overflow-wrap: hidden;
     }
     .login {
         margin: 0 0.3em;
-        padding: 1em 2em;
-        border-radius: 0.7em;
-        background: rgba(128, 0, 0, 1) 100%;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.651);
+        padding: 1em 1em 1em 1.5em;
     }
     .login h3 {
         font-size: 1rem;
     }
     .sign-up {
         margin: 0 1em;
-        padding: 1em 2em;
-        background: rgba(0, 51, 85, 1) 0%;
-        border-radius: 0.7em;
-        border: 2.5px solid whitesmoke;
-        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.586);
+        padding: 1em;
     }
     .sign-up h3 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     .footer {
         font-size: 0.9rem;
