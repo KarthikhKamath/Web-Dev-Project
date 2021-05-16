@@ -1,14 +1,43 @@
+
+
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* background-color: whitesmoke' */
-    background-image: url("texture.jpg");
-    background-blend-mode: multiply;
+    background-color: white;
+    /* background-image: url("texture.jpg"); */
+    
     overflow-x: hidden;
     
     
+}
+.mode{
+    width: 25px;
+    
+    cursor: pointer;
+    color: orange;
+    margin-left: 30px;
+    
+    filter: invert(1);
+    
+}
+.modeswitch {
+    background-color: black;
+    
+}
+
+.link{
+    background-color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.link:hover{
+    background-color: rgb(0, 0, 0);
+    /* padding: 5px 10px; */
+    color: white;
 }
 .width{
     max-width: 1536px;
@@ -60,6 +89,7 @@ ul li a:hover{
 }
 .links{
     transition: 0.5s;
+    
 }
 
 ul li{
@@ -83,8 +113,8 @@ ul li{
     
 }
 .sticky{
-    background-image: url("texture.jpg");
-    /* background: white; */
+    /* background-image: url("texture.jpg"); */
+    background: white;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
     
     transition: all 0.5s;
@@ -206,8 +236,11 @@ ul li{
 }
 .gamecharhome1{
     z-index: 2;
-    width: 450px;
-    transform: rotateY(180deg);
+    width: 500px;
+    /* transform: translateY(10rem); */
+}
+.gamecharhome1:hover{
+    
 }
 .home{
     z-index: 2;

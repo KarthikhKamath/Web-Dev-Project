@@ -13,12 +13,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
-
-    <div class="header">
+<body >
+<div class="everything ">
+    <div data-aos="fade" data-aos-duration="4000" class="header">
 
         <div class="logo"><a href="#">Gamezo</a></div>
         <div class="navigation">
@@ -30,28 +31,30 @@
             </div>
             <div class="links">
                 <ul>
-                    <li id="home"><a href="#home">Home</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a class="last-link" href="login.html">Login/Signin</a></li>
+                    <li id="home" ><a class="link" href="#home">Home</a></li>
+                    <li><a class="link" href="#games">Games</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
+                    <li><a class="link last-link" href="login.html">Login/Signin</a></li>
+                   <li > <img class="mode" src="sun.png" alt=""></li>
                 </ul>
+                
             </div>
         </div>
     </div>
     <div class="width">
         <div class="main">
 
-            <div class="home">
+            <div data-aos="fade" data-aos-duration="1000" class="home">
                 <h1 class="mainheading">Journey to the world<br> of games.</h1>
                 <p class="maininfo">Intense games are just one click away!</p>
                 <button class="explorebutton"><a href="#games"> Explore Now </a></button>
             </div>
             <div>
-                <img class="gamecharhome1" src="gamecharhome1.png" alt="game character">
+                <img data-aos="fade" data-aos-duration="1000" class="gamecharhome1" src="gamecharhome1.png" alt="game character">
             </div>
         </div>
         <!-- <img src="scratch.png" alt="" class="scratch"> -->
-        <section id="games">
+        <section data-aos="slide-up" data-aos-duration="1000" id="games">
             <p class="subheading">Games</p>
             <div class="container">
                 <div class="games game1">
@@ -136,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <div class="contact">
+        <div  class="contact">
             <p id="contact">Contact</p>
             <div class="cardforcontact">
                 <p>Phone : 0820-215478525</p>
@@ -149,6 +152,11 @@
         </footer>
     </div>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</div>
 </body>
 <script src="app.js"></script>
 
